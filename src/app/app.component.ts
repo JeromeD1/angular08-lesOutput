@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lesOutputs';
+
+  onomatopiaList: string[] = [] ;
+
+  onReceiveNewOnomatopia(onomatopia: string) :void {
+    this.onomatopiaList.push(onomatopia);
+  }
+
 }
